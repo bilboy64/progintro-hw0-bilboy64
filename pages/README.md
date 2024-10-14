@@ -1,1 +1,1 @@
-## Let's edit this shit MUAAHAHAHAH
+## This folder contains the deliverable text file needed for the first part of the assignment.
