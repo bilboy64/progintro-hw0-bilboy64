@@ -9,4 +9,8 @@ Executed command "grep "will find" shakespeare.txt".
 ### byte3
 Executed command "diff shakespeare.txt shakespeare.modified.txt".
 ### byte4
-Since there are multiple folders to choose from using the "find" command, one way to spot the "cup.txt" file is to execute this command: find / -name "cup.txt" -ls. This will traverse every directory (which we may or may not have access to read) of our OS and spot the requested file "cup.txt". 
+Since there are multiple folders to choose from using the "find" command, one way to spot the "cup.txt" file is to execute this command: find / -name "cup.txt" -ls. This will traverse every directory (which we may or may not have access to read) of our OS and spot the requested file "cup.txt".
+### byte5
+Created a new subdirectory using command "mkdir /tmp/new_subdir", then copied source file to this new directory, then ran command "cd /tmp/new_subdir" to go to said directory and
+complied the program there with commands "gcc byte5.c -o byte5" and "./byte5" to compile and execute program respectively (re-ran execution because of invalid format).
+

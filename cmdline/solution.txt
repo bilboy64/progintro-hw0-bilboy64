@@ -25,3 +25,4 @@ byte3:11542c11542
 ---
 >     And all the men and women merely programmers;
 byte4: /home/byte4/maze/left/right/8/cup.txt
+byte5: Here is your key: sdi2000073_1729268566_1682553734_31_217_161_14_46843_22
