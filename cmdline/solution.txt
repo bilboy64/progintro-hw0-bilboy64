@@ -28,3 +28,5 @@ byte4: /home/byte4/maze/left/right/8/cup.txt
 byte5: Here is your key: sdi2000073_1729268566_1682553734_31_217_161_14_46843_22
 byte6: unzipping_was_never_so_easy
 byte7: tar_jokes_dont_stick
+byte8:  no_more_secrets_from_you
+There is absolutely nothing to see here. Move along.
