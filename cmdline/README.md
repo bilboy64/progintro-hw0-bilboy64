@@ -13,4 +13,5 @@ Since there are multiple folders to choose from using the "find" command, one wa
 ### byte5
 Created a new subdirectory using command "mkdir /tmp/new_subdir", then copied source file to this new directory, then ran command "cd /tmp/new_subdir" to go to said directory and
 complied the program there with commands "gcc byte5.c -o byte5" and "./byte5" to compile and execute program respectively (re-ran execution because of invalid format).
-
+### byte6
+Created a new directory that by default gives us permission to read file, so we just created a new one in the /tmp directory called 'new_sundir' (with a typo). I unziped the file contents there after running command "unzip byte6.zip -d /tmp/new_sundir" and ran 'cat byte6.txt' to view the text file.
