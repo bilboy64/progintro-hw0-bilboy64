@@ -8,3 +8,5 @@ First ran command. Then checked its type using "type -t supercalifragilisticexpi
 Executed command "grep "will find" shakespeare.txt".
 ### byte3
 Executed command "diff shakespeare.txt shakespeare.modified.txt".
+### byte4
+Since there are multiple folders to choose from using the "find" command, one way to spot the "cup.txt" file is to execute this command: find / -name "cup.txt" -ls. This will traverse every directory (which we may or may not have access to read) of our OS and spot the requested file "cup.txt". 
