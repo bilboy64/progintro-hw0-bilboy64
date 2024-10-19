@@ -20,3 +20,7 @@ No one will find this: grep_is_your_friend
     Can couch for fear but I will find them out;
     will breed no terror in the youth: he will find it comes from a
     The crown will find an heir. Great Alexander
+byte3:11542c11542
+<     And all the men and women merely players;
+---
+>     And all the men and women merely programmers;
