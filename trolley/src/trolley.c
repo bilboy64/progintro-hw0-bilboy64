@@ -20,24 +20,23 @@ int main() {
         printf("Please enter the cost of going left: ");
         int result = scanf("%lld", &cost_left);
 
-        // Ensure that the input is not EOF, if it is, break out of the loop and set the exit code appropriately
+        // Ensure that the input is not EOF, if it is, set the exit code appropriately and break out of the loop
         if (result == EOF) {
             printf("\n");
             exit_code = 0;
             break;
         }
 
-        // Ensure that the input is a valid integer, if it is not, break out of the loop and set the exit code appropriately
+        // Ensure that the input is a valid integer, if it is not, set the exit code appropriately and break out of the loop
         if (result != 1) {
             printf("Invalid input. Terminating.\n");
             exit_code = 1;
             break; 
         }
 
-        // Ensure that integer cost read is within the range of -10^18 and 10^18, if it is not, break out of the loop and set the exit code appropriately
+        // Ensure that integer cost read is within the range of -10^18 and 10^18
         // Note: Typically the range of long long int is -9223372036854775808 to 9223372036854775807, which is why the "LL" suffix was added to the numbers.
         if (cost_left < -1000000000000000000LL || cost_left > 1000000000000000000LL) {
-            // printf("Invalid input. Please enter an integer number between -10^18 and 10^18.\n");
             printf("Invalid input. Terminating.\n");
             exit_code = 1;
             break;
@@ -45,9 +44,10 @@ int main() {
         
         // We want to, also, cover the case where given cost is a string of numbers, followed by some characters
         // For example, if the input is "67453hy", the program should terminate and print "Invalid input. Terminating.", with an exit code of 1
-        // To do this, we need to check if the next character in the input is a non-digit character
+        // Thankfully, scanf separates the integer from the characters (in any case such as "67453hy"), so we can check if the next character is a newline character or not
+        // If it's not a newline character, but a symbol, character, etc., then the input is invalid
         // Note: This check was done due to some test cases that were not already covered.
-        if (getchar() != '\n') { // If the next character is not a newline character, but a character, symbol, etc.
+        if (getchar() != '\n') {
             printf("Invalid input. Terminating.\n");
             exit_code = 1;
             break;
@@ -75,13 +75,12 @@ int main() {
 
         // Ensure that integer cost read is within the range of -10^18 and 10^18
         if (cost_right < -1000000000000000000LL || cost_right > 1000000000000000000LL) {
-            // printf("Invalid input. Please enter an integer number between -10^18 and 10^18.\n");
             printf("Invalid input. Terminating.\n");
             exit_code = 1;
             break;
         }
 
-        // Respectively, we need to ensure that the next character of the right path cost is a newline character
+        // Respectively, we need to ensure that the next character of the right path cost is a newline character and not a symbol, character, and so on
         if (getchar() != '\n') {
             printf("Invalid input. Terminating.\n");
             exit_code = 1;
